@@ -54,7 +54,7 @@ document.addEventListener('click',(e)=>{
           }).then(res => res.json()) 
           .then(data=>{
             console.log(data)
-            window.location.href= '/posts.html'
+            window.location.href= './posts.html'
           }
             )
           .catch(err=>{ throw err});

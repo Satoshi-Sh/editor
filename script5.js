@@ -38,7 +38,7 @@ fetch(`${base}/api/${id}`,{mode:'cors'})
         <textarea name="text" id='text' rows='10' cols='50'>${p.text}</textarea><br>
         <input type="checkbox" name="published" id="published">
         <label for="published"> Publish?</label><br>
-        <input type="submit" id=${id} class='update value="Submit" onsubmit="return false">
+        <input type="submit" id=${id} class='update' value="Submit" onsubmit="return false">
         
     </form>
     `
@@ -62,6 +62,8 @@ fetch(`${base}/api/${id}`,{mode:'cors'})
     // add trigger
 
     document.addEventListener('click',(e)=>{
+       if(e.target.classList[0]=='update')
+       {
         e.preventDefault();
         const form = document.querySelector('#update')
         const dict = getData(form)
@@ -82,9 +84,10 @@ fetch(`${base}/api/${id}`,{mode:'cors'})
           }).then(res => res.json()) 
           .then(data=>{
             console.log(data)
-            window.location.href= '/posts.html'
+            window.location.href= './posts.html'
           }
             )
           .catch(err=>{ throw err});
         }
+      }
     })
