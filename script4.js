@@ -80,7 +80,7 @@ fetch(`${base}/api/${id}`,{mode:'cors'})
           }).then(res => res.json()) 
           .then(data=>{
             console.log(data)
-            window.location.href= `editor/detail.html?id=${id}`
+            window.location.href= `/detail.html?id=${id}`
           }
             )
           .catch(err=>{ throw err});
