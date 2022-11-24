@@ -38,7 +38,7 @@ document.getElementById("create").addEventListener("submit", function (e) {
      }).then(res => res.json())
      .then(message=>{
         console.log(message)
-        window.location.href='/posts.html'
+        window.location.href='/editor/posts.html'
      })
      .catch(err=>{throw err})
 

@@ -27,7 +27,7 @@ document.getElementById("login").addEventListener("submit", function (e) {
         console.log(data)
         window.localStorage.setItem("token",data['token'])
         window.localStorage.setItem("username",data['username'])
-        window.location.href= '/posts.html'
+        window.location.href= '/editor/posts.html'
       }
         )
       .catch(err=>{ throw err});
