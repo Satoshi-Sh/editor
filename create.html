@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog with API</title>
+    <script src="script2.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="/posts.html">Posts</a>
+        <a href="/create.html">Create Post</a>
+    </div>
+    <h2>Create NewPost</h2>
+    <form action="" id="create">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"></br>
+        <label for="text">Text:</label><br>
+        <textarea name="text" id='text' rows='10' cols='50'></textarea><br>
+        <input type="checkbox" name="published" id="published" checked>
+        <label for="published"> Publish?</label><br>
+        <input type="submit" value="Submit" onsubmit="return false">
+        
+    </form>
+    
+</body>
+</html>

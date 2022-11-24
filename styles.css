@@ -1,0 +1,73 @@
+body {
+    background-color:azure;
+    padding:20px;
+}
+
+.title{
+    text-align:center;
+}
+
+
+input,lable,textarea {
+    margin:20px;
+}
+
+
+.nav{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+a:hover {
+ color:aquamarine
+}
+
+a {
+    color: grey;
+    text-decoration:none;
+    font-size:23px;
+}
+
+
+.board{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr)) ;
+    align-items:center;
+    justify-content:center;
+    width:80vw;
+    gap:30px;
+}
+
+.card{
+    background-color:aliceblue;
+    padding:20px;
+    min-height:300px;
+}
+.comment-card{
+    background-color:aliceblue;
+    padding:20px;
+}
+
+.delete{
+    background-color:rgba(255, 0, 0, 0.678);
+    height:25px;
+    width:80px;
+    cursor: pointer;
+}
+.delete:hover{
+    background-color:rgba(255, 0, 0, 0.9); 
+}
+
+.post-page{
+    margin-top:20px;
+}
+.post-page:hover{
+    color:aquamarine;
+}
+
+.date{
+    font-size:14px;
+    margin-left:20px;
+    font-weight:200;
+}
